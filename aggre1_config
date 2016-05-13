@@ -1,0 +1,41 @@
+!
+hostname aggre1
+!
+interface FastEthernet2/1
+ description switch1
+ switchport
+ switchport trunk encapsulation dot1q
+ switchport trunk allowed vlan 1,8,11,49,51,212,529,534,548,550,563,804
+ switchport mode trunk
+!
+interface FastEthernet2/2
+ description switch2
+ switchport
+ switchport trunk encapsulation dot1q
+ switchport trunk allowed vlan 1,8,10,49,51-53,251,550,563,804
+ switchport mode trunk
+!
+interface FastEthernet2/3
+ description switch3
+ switchport
+ switchport trunk encapsulation dot1q
+ switchport trunk allowed vlan 1,8,11,51,251,529,548,550,563,804
+ switchport trunk allowed vlan add 804
+ switchport mode trunk
+!
+interface FastEthernet2/4
+ description switch4
+ switchport
+ switchport trunk encapsulation dot1q
+ switchport trunk allowed vlan 1,8,11,49,51,212,434,529,534,548,550,563,804
+ switchport trunk allowed vlan add 2908
+ switchport mode trunk
+!
+interface FastEthernet2/5
+ description switch5
+ switchport
+ switchport trunk encapsulation dot1q
+ switchport trunk allowed vlan 1,51,550,563,804
+ switchport mode trunk
+!
+end
