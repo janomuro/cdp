@@ -1,0 +1,11 @@
+show cdp nei
+Capability Codes: R - Router, T - Trans Bridge, B - Source Route Bridge
+                  S - Switch, H - Host, I - IGMP, r - Repeater, P - Phone, 
+                  D - Remote, C - CVTA, M - Two-port Mac Relay 
+
+Device ID        Local Intrfce     Holdtme    Capability  Platform  Port ID
+aggre2
+                 Gig 0/1           175             R S I  WS-C6509- Fas 2/3
+aggre1
+                 Gig 0/2           163             R S I  WS-C6509- Fas 2/3
+switch3#
