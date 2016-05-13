@@ -1,0 +1,15 @@
+!
+hostname switch3
+!
+!
+interface GigabitEthernet0/1
+ switchport trunk allowed vlan 1,8,11,51,251,529,548,550,804
+ switchport mode trunk
+!
+interface GigabitEthernet0/2
+ switchport trunk allowed vlan 1,8,11,51,251,529,548,550,804
+ switchport mode trunk
+!
+end
+
+
